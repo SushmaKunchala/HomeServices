@@ -1,7 +1,6 @@
 import React from "react";
 import {Row,Col, Button} from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
 import axios from "axios";
 
 var values={};
@@ -42,7 +41,7 @@ function Customer()
     return <div>
         <Row style={{marginTop:"30px"}}>
             <Col lg={4}></Col>
-            <Col lg={4}><form onSubmit={()=>{fun()}}action="/success" style={{border:"solid 2px gray",padding:"30px",borderRadius:"10px"}}>
+            <Col lg={4}><form onSubmit={()=>{fun()}} action="/success" style={{border:"solid 2px gray",padding:"30px",borderRadius:"10px"}}>
         <div class="form-group">
             <label>Name</label>
             <Row>

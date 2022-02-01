@@ -1,7 +1,5 @@
-import React, { useState,useContext } from "react";
+import React, { useState} from "react";
 import {Button} from "react-bootstrap";
-import Service_option from "./Service_option";
-import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 var show=false;
