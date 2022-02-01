@@ -5,6 +5,7 @@ import Home from './components/pages/Home';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import Services from './components/pages/Services';
 import SignUp from './components/pages/SignUp';
+import Login from './components/pages/Login';
 import Options_available from './components/Options_available';
 import Customer from "./components/Customer";
 import Success from "./components/Success";
@@ -17,6 +18,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/services' element={<Services />} />
           <Route path='/sign-up' element={ <SignUp /> }/>
+          <Route path="/login" element={<Login />} />
           <Route  path='/Option/:cname' element={ <Options_available />}></Route>
           <Route path="/Filter/:name/:cost/:val" element={<Options_available />}></Route>
           <Route path="/customer/:cus_name/:cus_cost" element={<Customer />}></Route>
